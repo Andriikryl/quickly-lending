@@ -1,0 +1,26 @@
+.sponsors{
+    padding-block: 40px;
+}
+
+.sponsors__title{
+    color: var(--dark-green, #20484F);
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 20px;
+    text-align: center;
+}
+
+.sponsors__box{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20ch), 1fr));
+    gap: 30px;   
+}
+
+.box__item{
+    list-style: none;
+}
