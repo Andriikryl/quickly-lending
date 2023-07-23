@@ -1,0 +1,98 @@
+.list__item{
+    list-style: none;
+    max-width: 356px;
+}
+
+.item__card{
+    background-color: #20484F;
+    border-radius: 18% 48% 49% 38% / 34% 39% 41% 40%;
+    padding: 35px 66px 41px 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 356px;
+    margin-block-end: 26px;
+}
+
+.inner__card{
+    flex-grow: 1;
+    max-width: 222px;
+    padding: 20px;
+    border-radius: 9.347px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 3.1157896518707275px 31.15789794921875px 0px rgba(138, 138, 138, 0.04);
+}
+
+.card__title{
+    color: var(--dark-green, #20484F);
+    font-family: Plus Jakarta Sans;
+    font-size: 19.326px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-block-end: 10px;
+}
+
+.card__description{
+    display: block;
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 15.031px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    text-align: center;
+    margin-block-end: 30px;
+}
+
+.avatar__box{
+    margin-block-end: 20px;
+    border-radius: 78.376px;
+    border: 3.221px solid var(--primary-green, #B8E4DA);
+    width: max-content;
+    margin-inline: auto;
+}
+
+.line{
+    width: 137.426px;
+    height: 11.81px;
+    border-radius: 12.884px;
+    background: var(--border, rgba(32, 72, 79, 0.10));
+    margin-block-end: 10px;
+    margin-inline: auto;
+}
+.line__two{
+    margin-inline: auto;
+    width: 85.891px;
+    height: 11.81px;
+    border-radius: 12.884px;
+    background: var(--border, rgba(32, 72, 79, 0.10));
+    margin-block-end: 30px;
+}
+
+
+
+
+
+.item__title{
+    color: var(--dark, #072125);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 14px;
+}
+
+.item__description{
+    color: var(--dark, #072125);
+    display: inline-block;
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}

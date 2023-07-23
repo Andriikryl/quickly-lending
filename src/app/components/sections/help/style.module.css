@@ -1,0 +1,21 @@
+.help{
+    padding-block: 100px;
+}
+
+.help__title{
+    text-align: center;
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 70px;
+}
+
+.help__list{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20ch), 1fr));
+    gap: 45px; 
+}
