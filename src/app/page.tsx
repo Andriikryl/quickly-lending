@@ -1,3 +1,4 @@
+import CanDo from "./components/sections/canDo/CanDo";
 import Help from "./components/sections/help/Help";
 import Hero from "./components/sections/hero/Hero";
 import Product from "./components/sections/product/Product";
@@ -10,6 +11,7 @@ export default function Home() {
       <Sponsors />
       <Product />
       <Help />
+      <CanDo />
     </>
   );
 }
