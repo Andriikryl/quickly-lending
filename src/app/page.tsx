@@ -1,4 +1,5 @@
 import CanDo from "./components/sections/canDo/CanDo";
+import Customers from "./components/sections/customers/Customers";
 import Help from "./components/sections/help/Help";
 import Hero from "./components/sections/hero/Hero";
 import Product from "./components/sections/product/Product";
@@ -12,6 +13,7 @@ export default function Home() {
       <Product />
       <Help />
       <CanDo />
+      <Customers />
     </>
   );
 }

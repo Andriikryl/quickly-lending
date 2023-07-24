@@ -1,0 +1,83 @@
+.customers{
+    background-color: hsla(0, 0%, 98%, 1);
+    padding-block: 70px;
+}
+
+.customers__title{
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 16px;
+}
+
+.flex__group{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-block-end: 48px;
+}
+
+.customers__btn{
+    padding: 16px 36px;
+    color: var(--white, #FFF);
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    border-radius: 8px;
+    background: var(--dark-green, #20484F);
+}
+
+.customers__list{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 40ch), 1fr));
+    gap: 20px; 
+}
+
+.list__item{
+    list-style: none;
+    max-width: 387px;
+    padding-inline: 44px 54px;
+    padding-block: 37px 33px;
+    border-radius: 24px;
+    background: var(--white, #FFF);
+}
+
+.item__image{
+    margin-block-end: 37px;
+}
+
+.item__text{
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-block-end: 87px;
+}
+
+.item__title{
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 8px;
+}
+
+.item__description{
+    color: var(--dark-green, #20484F);
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
