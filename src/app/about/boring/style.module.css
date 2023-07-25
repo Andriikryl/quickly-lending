@@ -1,0 +1,43 @@
+.boring{
+    padding-block: 50px;
+}
+
+.boring__title{
+    color: var(--dark, #072125);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 20px;
+}
+
+.boring__description{
+    display: block;
+    margin-inline: auto;
+    max-width: 495px;
+    color: var(--dark, #072125);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-block-end: 20px;
+}
+
+.boring__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20ch), 1fr));
+    gap: 28px; 
+}
+
+
+.list__item{
+    list-style: none;
+}
+
+.list__item:nth-child(2n){
+    margin-block-start: 150px;
+}

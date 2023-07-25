@@ -1,4 +1,6 @@
+import Boring from "./boring/Boring";
 import Build from "./build/Build";
+import Story from "./story/Story";
 import Work from "./work/Work";
 
 export default function About() {
@@ -6,6 +8,8 @@ export default function About() {
     <div>
       <Build />
       <Work />
+      <Story />
+      <Boring />
     </div>
   );
 }
