@@ -29,29 +29,29 @@ export default function Hero() {
             </div>
           </div>
           <div className={style.hero__innerBox}>
-            <div className={style.avatar__box}>
-              <div className={style.avatar__image}>
-                <Image src={Avatar} width={63} height={63} alt="avatar" />
-              </div>
-              <div className={style.avatar__text}>
-                <span className={style.main__text}>New task assigned</span>
-                <span className={style.sub__text}>
-                  Louise assigned you a project
-                </span>
-              </div>
-            </div>
             <div className={style.hero__image}>
               <Image src={HeroImage} width={415} height={490} alt="hero" />
-            </div>
-            <div className={style.project__box}>
-              <div className={style.project__image}>
-                <Image src={Arrow} width={34} height={34} alt="confirm" />
+              <div className={style.avatar__box}>
+                <div className={style.avatar__image}>
+                  <Image src={Avatar} width={63} height={63} alt="avatar" />
+                </div>
+                <div className={style.avatar__text}>
+                  <span className={style.main__text}>New task assigned</span>
+                  <span className={style.sub__text}>
+                    Louise assigned you a project
+                  </span>
+                </div>
               </div>
-              <div className={style.project__view}>
-                <span className={style.project__name}> Project Updated</span>
-                <div className={style.line}></div>
-                <div className={style.line__two}></div>
-                <div className={style.box}></div>
+              <div className={style.project__box}>
+                <div className={style.project__image}>
+                  <Image src={Arrow} width={34} height={34} alt="confirm" />
+                </div>
+                <div className={style.project__view}>
+                  <span className={style.project__name}> Project Updated</span>
+                  <div className={style.line}></div>
+                  <div className={style.line__two}></div>
+                  <div className={style.box}></div>
+                </div>
               </div>
             </div>
           </div>

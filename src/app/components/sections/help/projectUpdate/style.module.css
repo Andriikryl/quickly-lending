@@ -85,3 +85,15 @@
     font-weight: 400;
     line-height: 150%;
 }
+
+@media (max-width: 550px) {
+    .line{
+        width: 50px;
+    }
+    .line__two{
+        width: 80px;
+    }
+    .list__item{
+        max-width: 320px;
+    }
+}

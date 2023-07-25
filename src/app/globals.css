@@ -6,9 +6,20 @@
   margin: 0;
 }
 body {
+  height: 100vh;
+  display: grid;
+  grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+  gap: 8px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
+.main { grid-area: main; }
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;

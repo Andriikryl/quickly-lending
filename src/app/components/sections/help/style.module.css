@@ -16,6 +16,7 @@
 .help__list{
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20ch), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+    place-items: center;
     gap: 45px; 
 }

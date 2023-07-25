@@ -2,17 +2,18 @@
 .header{
   background: var(--dark-green, #20484F);
     padding-block: 24px;
+    grid-area: header;
 }
 
 
 .header__box{
     gap: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -22,11 +23,13 @@
 .nav__list{
     display: flex;
     gap: 33px;
+    margin-left: auto;
 }
 
 .list__item{
   list-style: none;
 }
+
 
 .list__link{
   color: var(--white, #FFF);
@@ -59,6 +62,7 @@
 }
 
 .flex__group{
+    margin-left: auto;
     display: flex;
     gap: 20px;
 }
@@ -135,7 +139,7 @@
       left: 0;
       top: 0;
       width: 100%;
-      background: hsl(223deg 2.41% 4.48% / 70%);
+      background: var(--dark-green, #20484F);
       backdrop-filter: blur(10px);
       height: 100vh;
       z-index: 100;
@@ -161,6 +165,7 @@
   .nav__list{
     display: flex;
     text-align: center;
+    margin: auto;
     gap: 20px;
     flex-direction: column;
   }
@@ -171,12 +176,14 @@
 
   .flex__group{
     flex-direction: column;
+    margin: auto;
 }
 }
 
 @media (max-width:1140px) {
     .burger{
       display: block;
+      margin-left: auto;
     }
   }
   

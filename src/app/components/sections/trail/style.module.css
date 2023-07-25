@@ -19,7 +19,7 @@
     max-width: 831px;
     margin-inline: auto;
     font-family: Plus Jakarta Sans;
-    font-size: 50px;
+    font-size: clamp(24px, 5vw + 1rem, 50px);
     font-style: normal;
     font-weight: 700;
     line-height: 120%; 

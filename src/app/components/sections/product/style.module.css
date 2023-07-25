@@ -5,13 +5,14 @@
 .product__box{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 64px;
 }
 
 .product__title{
     color: var(--dark, #072125);
     font-family: Plus Jakarta Sans;
-    font-size: 32px;
+    font-size: clamp(20px, 5vw + 0.5rem, 32px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -179,3 +180,26 @@
     width: 111px;
     height: 6px;
 }
+
+@media (max-width:1180px) {
+    .product{
+        text-align: center;
+    }
+    .product__title{
+        margin-inline: auto;
+    }
+    .item__image{
+        margin-inline: auto;
+    }
+}
+
+@media (max-width:700px) {
+    .project__boxRait{
+        display: none;
+    }
+    .prduct__list{
+        max-width: inherit;
+        place-items: center;
+    }
+}
+

@@ -5,6 +5,7 @@ import styles from "./styles.module.css";
 import BurgerButton from "./BurgerButton";
 import Logo from "public/logotypes/Quickly..svg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [activeState, setActiveState] = useState(false);
@@ -21,46 +22,46 @@ export default function Header() {
     <header className={styles.header}>
       <Container>
         <div className={styles.header__box}>
-          <a className={styles.header__logo} href="#">
+          <Link className={styles.header__logo} href="/">
             <Image src={Logo} width={99} height={30} alt="logo" />
-          </a>
+          </Link>
           <nav
             className={`${styles.nav} ${activeState ? styles.menu_active : ""}`}
           >
             <ul className={styles.nav__list}>
               <li className={styles.list__item}>
-                <a className={styles.list__link} href="#">
+                <Link href="/about" className={styles.list__link}>
                   About us
-                </a>
+                </Link>
               </li>
               <li className={styles.list__item}>
-                <a className={styles.list__link} href="#">
+                <Link href="/products" className={styles.list__link}>
                   Products
-                </a>
+                </Link>
               </li>
               <li className={styles.list__item}>
-                <a className={styles.list__link} href="#">
+                <Link href="/features" className={styles.list__link}>
                   Features
-                </a>
+                </Link>
               </li>
               <li className={styles.list__item}>
-                <a className={styles.list__link} href="#">
+                <Link href="/blog" className={styles.list__link}>
                   Our Blog
-                </a>
+                </Link>
               </li>
               <li className={styles.list__item}>
-                <a className={styles.list__link} href="#">
+                <Link href="/pricing" className={styles.list__link}>
                   Pricing
-                </a>
+                </Link>
               </li>
             </ul>
             <div className={styles.flex__group}>
-              <a className={styles.nav__link} href="">
+              <Link className={styles.nav__link} href="">
                 Sign up
-              </a>
-              <a className={styles.nav__link} href="">
+              </Link>
+              <Link className={styles.nav__link} href="">
                 Log In
-              </a>
+              </Link>
             </div>
           </nav>
           <BurgerButton onClick={handleClick} activeState={activeState} />

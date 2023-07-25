@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     align-items: center;
     margin-block-end: 48px;
+    gap: 20px;
 }
 
 .customers__btn{

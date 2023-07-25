@@ -30,7 +30,7 @@
 .hero__title{
     color: var(--dark, #072125);
     font-family: Plus Jakarta Sans;
-    font-size: 64px;
+    font-size: clamp(20px, 5vw + 1rem, 64px);
     font-style: normal;
     font-weight: 700;
     line-height: 120%; 
@@ -54,6 +54,7 @@
     gap: 20px;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero__innerBox{
@@ -62,6 +63,7 @@
 }
 
 .hero__image{
+    position: relative;
     padding: 50px;
     background-image: url("/hero/bg.jpg");
     background-size: 463px 601px;
@@ -93,6 +95,12 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: hsla(167, 47%, 91%, 1);
+    transition: all 700ms ease-in-out;
+}
+
+.project__image:hover{
+    background-color: #ffd60a;
+    transform: rotateY(360deg);
 }
 
 .project__name{
@@ -112,6 +120,10 @@
     width: 273px;
     height: 11px;
     margin-block-end: 12px;
+    transition: all 500ms ease-in-out;
+}
+.line:hover{
+    background: #ffb703;
 }
 
 .line__two{
@@ -120,6 +132,11 @@
     width: 182px;
     height: 11px;
     margin-block-end: 42px;
+    transition: all 500ms ease-in-out;
+}
+
+.line__two:hover{
+    background: #8ecae6;
 }
 
 .box{
@@ -127,10 +144,11 @@
     height: 37px;
     border-radius: 8px;
     background: var(--primary-green, #B8E4DA);
+    transition: all 500ms ease-in-out;
 }
 
 .avatar__box{
-    max-width: 389px;
+    min-width: 389px;
     display: flex;
     gap: 19px;
     border-radius: 12px;
@@ -143,11 +161,20 @@
     left: 176px;
 }
 
+.box:hover{
+    background: #ffb4a2;
+}
+
 .avatar__image{
     width: max-content;
     padding: 2px;
     border-radius: 73px;
     border: 3px solid var(--primary-green, #B8E4DA);
+    transition: all 500ms ease-in-out;
+}
+
+.avatar__image:hover{
+    border: 3px solid var(--primary-green, #e63946);
 }
 
 .main__text{
@@ -168,4 +195,43 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; 
+}
+
+@media (max-width: 1220px) {
+    .hero__box{
+        margin: 0;
+        flex-direction: column;
+    }
+    .hero__info{
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero__innerBox{
+        order: 1;
+    }
+}
+
+@media (max-width: 680px) {
+    .avatar__box{
+        display: none;
+    }
+    .project__box{
+        padding-inline: 11px 18px;
+        position: absolute;
+        bottom: -72px;
+        left: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project__box{
+        display: none;
+    }
+    .hero__image{
+        padding: 0;
+    }
 }
