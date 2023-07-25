@@ -1,7 +1,9 @@
+import Build from "./build/Build";
+
 export default function About() {
   return (
     <div>
-      <h1>about us</h1>
+      <Build />
     </div>
   );
 }
