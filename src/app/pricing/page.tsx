@@ -1,3 +1,4 @@
+import Plans from "./plans/Plans";
 import PrisingHero from "./prisingHero/PrisingHero";
 
 export default function Pricing() {
@@ -5,6 +6,7 @@ export default function Pricing() {
     <div>
       <div>
         <PrisingHero />
+        <Plans />
       </div>
     </div>
   );
