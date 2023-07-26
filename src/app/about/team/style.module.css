@@ -13,9 +13,12 @@
     margin-block-end: 68px;
 }
 
-.team__list{
+.inner___box{
     max-width: 740px;
     margin-inline: auto;
+}
+
+.team__list{
     display: grid;
     align-items: center;
     place-items: center;

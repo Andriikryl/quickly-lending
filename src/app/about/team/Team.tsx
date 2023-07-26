@@ -83,58 +83,60 @@ export default function Team() {
     <section className={style.team}>
       <Container>
         <h3 className={style.team__title}>A team of exceptional people</h3>
-        <ul className={style.team__list}>
-          {data.map((item) => {
-            return (
-              <li key={item.id} className={style.list__item}>
-                <div className={style.item__image}>
-                  <Image
-                    src={item.img}
-                    width={item.width}
-                    height={item.heigth}
-                    alt={item.alt}
-                  />
-                </div>
-                <h4 className={style.item__title}>{item.title}</h4>
-                <span className={style.item__description}>
-                  {item.description}
-                </span>
-                <ul className={style.social__list}>
-                  <li className={style.inner__item}>
-                    <a className={style.social__link} href="#">
-                      <Image
-                        src={item.faceImg}
-                        width={24}
-                        height={24}
-                        alt="social"
-                      />
-                    </a>
-                  </li>
-                  <li className={style.inner__item}>
-                    <a className={style.social__link} href="#">
-                      <Image
-                        src={item.instImg}
-                        width={24}
-                        height={24}
-                        alt="social"
-                      />
-                    </a>
-                  </li>
-                  <li className={style.inner__item}>
-                    <a className={style.social__link} href="#">
-                      <Image
-                        src={item.twiterImg}
-                        width={24}
-                        height={24}
-                        alt="social"
-                      />
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            );
-          })}
-        </ul>
+        <div className={style.inner___box}>
+          <ul className={style.team__list}>
+            {data.map((item) => {
+              return (
+                <li key={item.id} className={style.list__item}>
+                  <div className={style.item__image}>
+                    <Image
+                      src={item.img}
+                      width={item.width}
+                      height={item.heigth}
+                      alt={item.alt}
+                    />
+                  </div>
+                  <h4 className={style.item__title}>{item.title}</h4>
+                  <span className={style.item__description}>
+                    {item.description}
+                  </span>
+                  <ul className={style.social__list}>
+                    <li className={style.inner__item}>
+                      <a className={style.social__link} href="#">
+                        <Image
+                          src={item.faceImg}
+                          width={24}
+                          height={24}
+                          alt="social"
+                        />
+                      </a>
+                    </li>
+                    <li className={style.inner__item}>
+                      <a className={style.social__link} href="#">
+                        <Image
+                          src={item.instImg}
+                          width={24}
+                          height={24}
+                          alt="social"
+                        />
+                      </a>
+                    </li>
+                    <li className={style.inner__item}>
+                      <a className={style.social__link} href="#">
+                        <Image
+                          src={item.twiterImg}
+                          width={24}
+                          height={24}
+                          alt="social"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </Container>
     </section>
   );
