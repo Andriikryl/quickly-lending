@@ -1,0 +1,79 @@
+.source{
+    margin-block: 100px;
+}
+
+.source__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.source__title{
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 20px;
+    max-width: 497px;
+}
+
+.source__description{
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin-block-end: 44px;
+    max-width: 504px;
+}
+
+.sourse__list{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.list__item{
+    list-style: none;
+    display: flex;
+    gap: 26px;
+}
+
+.list__item::before{
+    content: "";
+    display: block;
+    background-image: url("/icons/check.svg");
+    width: 44px;
+    height: 44px;
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-color: var(--primary-light, #DCF2ED);
+}
+
+.item__title{
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 12px;
+    max-width: 359xp;
+}
+
+.item__description{
+    color: var(--dark, #072125);
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    max-width: 387px;
+}
+

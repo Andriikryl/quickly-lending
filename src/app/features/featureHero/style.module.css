@@ -1,0 +1,25 @@
+.hero{
+    padding-block: 100px 60px;
+}
+
+.hero__description{
+    display: block;
+    color: var(--dark-green, #20484F);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block-end: 16px;
+}
+
+.hero__title{
+    color: var(--dark, #072125);
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 76.8px */
+}

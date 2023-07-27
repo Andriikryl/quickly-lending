@@ -1,7 +1,11 @@
+import FeatureHero from "./featureHero/FeatureHero";
+import Source from "./source/Source";
+
 export default function Features() {
   return (
-    <div>
-      <h1>Features</h1>
-    </div>
+    <>
+      <FeatureHero />
+      <Source />
+    </>
   );
 }

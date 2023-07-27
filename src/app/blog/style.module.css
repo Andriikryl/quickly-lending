@@ -1,0 +1,11 @@
+.blog__title{
+    padding-block: 50px;
+    color: var(--dark, #072125);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Plus Jakarta Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 76.8px */
+}
