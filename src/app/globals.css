@@ -14,7 +14,6 @@ body {
     "main" 1fr
     "footer" auto
     / 1fr;
-  gap: 8px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }

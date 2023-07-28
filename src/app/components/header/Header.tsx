@@ -56,7 +56,7 @@ export default function Header() {
               </li>
             </ul>
             <div className={styles.flex__group}>
-              <Link className={styles.nav__link} href="">
+              <Link href={"/singUp"} className={styles.nav__link}>
                 Sign up
               </Link>
               <Link className={styles.nav__link} href="">
