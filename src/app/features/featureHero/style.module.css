@@ -1,6 +1,9 @@
 .hero{
-    padding-block: 100px 60px;
+    padding-block-start: clamp(20px, 5vw + 2rem, 100px);
+    padding-block-start: clamp(20px, 5vw + 1rem, 60px);
 }
+
+
 
 .hero__description{
     display: block;

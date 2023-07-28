@@ -225,3 +225,38 @@
     position: relative;
     left: 115px;
   }
+
+  @media (max-width: 650px) {
+    .box__header{
+      gap: 20px;
+    }
+    .header__search{
+      width: 100px;
+    }
+    .body{
+      flex-wrap: wrap;
+    }
+    :is(.implementation, .placement, .navigation,   .product,   .footer ){
+      width: max-content;
+      padding-inline: 20px;
+      align-self: self-start;
+      margin-inline-start: 10px;
+    }
+    .footer{
+      left: 0px;
+      align-self: self-start;
+    }
+    .main{
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width:440px) {
+    .aside{
+      max-width: 280px;
+      width: 100%;
+    }
+    .marquee{
+      max-width: 300px;
+    }
+  }

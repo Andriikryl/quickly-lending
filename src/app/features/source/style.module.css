@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    gap: clamp(20px, 5vw + 2rem, 100px);
 }
 
 .source__title{
@@ -77,3 +77,7 @@
     max-width: 387px;
 }
 
+.source__image img{
+    object-fit: contain;
+    height: auto;
+}
